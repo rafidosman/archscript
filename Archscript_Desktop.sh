@@ -41,20 +41,20 @@
 #sed -i 's/GRUB_TIMEOUT=5/GRUB_TIMEOUT=0/g' /etc/default/grub
 #grub-mkconfig -o /boot/grub/grub.cfg
 
-pacman -S xorg xorg-server xorg-xinit xorg-xkill xorg-xsetroot xorg-xbacklight xorg-xprop xorg-xrandr xorg-xinput bspwm sxhkd dunst pavucontrol libnotify lxappearance papirus-icon-theme arc-gtk-theme rofi nitrogen zsh zsh-syntax-highlighting zsh-autosuggestions kitty ranger mpd playerctl mpc ncmpcpp neofetch lolcat htop bashtop neovim hunspell hunspell-en_us hyphen hyphen-en feh firefox starship bat exa duf xfce4-clipman-plugin rsync maim xdotool noto-fonts noto-fonts-emoji ttf-joypixels ttf-font-awesome sxiv mpv imagemagick fzf gzip p7zip libzip zip unzip yt-dlp xclip alsa-utils alsa-firmware sof-firmware man-db zathura zathura-pdf-mupdf xdg-user-dirs xdg-utils unclutter lightdm lightdm-gtk-greeter dialog wpa_supplicant mtools gvfs gvfs-smb nfs-utils inetutils dnsutils 
+sudo pacman -S --noconfirm oxorg xorg-server xorg-xinit xorg-xkill xorg-xsetroot xorg-xbacklight xorg-xprop xorg-xrandr xorg-xinput bspwm sxhkd dunst pavucontrol libnotify lxappearance papirus-icon-theme arc-gtk-theme rofi nitrogen zsh zsh-syntax-highlighting zsh-autosuggestions kitty ranger mpd playerctl mpc ncmpcpp neofetch lolcat htop bashtop neovim hunspell hunspell-en_us hyphen hyphen-en feh firefox starship bat exa duf xfce4-clipman-plugin rsync maim xdotool noto-fonts noto-fonts-emoji ttf-joypixels ttf-font-awesome sxiv mpv imagemagick fzf gzip p7zip libzip zip unzip yt-dlp xclip alsa-utils alsa-firmware sof-firmware man-db zathura zathura-pdf-mupdf xdg-user-dirs xdg-utils unclutter lightdm lightdm-gtk-greeter dialog wpa_supplicant mtools gvfs gvfs-smb nfs-utils inetutils dnsutils --needed
 
 
 #pacman -S --noconfirm mesa xf86-video-intel libva-intel-driver intel-media-driver libva-vdpau-driver libvdpau-va-gl
 #pacman -S --noconfirm nvidia nvidia-utils nvidia-settings 
 
-pacman -S arandr vlc ttf-bitstream-vera ttf-croscore ttf-dejavu ttf-droid gnu-free-fonts ttf-ibm-plex ttf-liberation ttf-linux-libertine ttf-roboto tex-gyre-fonts ttf-ubuntu-font-family ttf-anonymous-pro ttf-cascadia-code ttf-fantasque-sans-mono ttf-fira-mono ttf-hack ttf-fira-code ttf-inconsolata ttf-jetbrains-mono ttf-monofur adobe-source-code-pro-fonts cantarell-fonts inter-font ttf-opensans gentium-plus-font ttf-junicode adobe-source-han-sans-otc-fonts adobe-source-han-serif-otc-fonts noto-fonts-cjk noto-fonts-emoji ttf-font-awesome awesome-terminal-fonts  pacman-contrib
+sudo pacman -S arandr vlc ttf-bitstream-vera ttf-croscore ttf-dejavu ttf-droid gnu-free-fonts ttf-ibm-plex ttf-liberation ttf-linux-libertine ttf-roboto tex-gyre-fonts ttf-ubuntu-font-family ttf-anonymous-pro ttf-cascadia-code ttf-fantasque-sans-mono ttf-fira-mono ttf-hack ttf-fira-code ttf-inconsolata ttf-jetbrains-mono ttf-monofur adobe-source-code-pro-fonts cantarell-fonts inter-font ttf-opensans gentium-plus-font ttf-junicode adobe-source-han-sans-otc-fonts adobe-source-han-serif-otc-fonts noto-fonts-cjk noto-fonts-emoji ttf-font-awesome awesome-terminal-fonts  pacman-contrib
 
 
 
 #systemctl enable NetworkManager.service 
-systemctl enable lightdm.service
+sudo systemctl enable lightdm.service
 #systemctl enable tlp # You can comment this command out if you didn't install tlp, see above
-systemctl enable fstrim.timer
+sudo systemctl enable fstrim.timer
 #systemctl enable firewalld
 #systemctl enable acpid
 
