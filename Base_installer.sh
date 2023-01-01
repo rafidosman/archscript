@@ -49,7 +49,7 @@ pacman -S feh firefox starship dust bat exa rsync maim xdotool
 pacman -S noto-fonts noto-fonts-emoji ttf-joypixels ttf-font-awesome 
 pacman -S sxiv mpv imagemagick fzf gzip p7zip libzip zip unzip yt-dlp xclip
 pacman -S dhcpcd networkmanager pamixer paprefs pulseaudio pulseaudio-alsa pulsemixer pavucontrol alsa-utils alsa-firmware sof-firmware man-db
-pacman -S zathura zathura-pdf-mupdf xdg-user-dirs xdg-utils unclutter lightdm lightdm-gtk-greeter
+pacman -S zathura zathura-pdf-mupdf xdg-user-dirs xdg-utils unclutter qtile lightdm lightdm-gtk-greeter
 pacman -S dialog wpa_supplicant linux-headers gvfs gvfs-smb nfs-utils inetutils dnsutils firewalld dosfstools ntfs-3g
 
 

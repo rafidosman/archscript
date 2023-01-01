@@ -5,8 +5,12 @@ echo "Welcome to fido's arch installer script"
 # Making downloads faster
 #pacman --noconfirm -Sy reflector
 #reflector --latest 20 --sort rate --save /etc/pacman.d/mirrorlist --protocol https --download-timeout 5
-#sed -i "s/^#ParallelDownloads = 5$/ParallelDownloads = 15/" /etc/pacman.conf
+sed -i "s/^#ParallelDownloads = 5$/ParallelDownloads = 15/" /etc/pacman.conf
 #pacman --noconfirm -Sy archlinux-keyring
+
+pacman-key --init
+pacman-key --populate archlinux
+pacman -Sy archlinux-keyring
 
 # Setting keymap and time stuff
 loadkeys us
